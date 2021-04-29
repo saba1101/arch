@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saba Kharaishvili">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon"  href="./css/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Pro Arch</title>
+</head>
+<body>
+
+    <div class="loader">
+        <img src="./css/assets/images/loader.gif" alt="">
+    </div>
+
+    <div class="res-menu-bar">
+        <button id="res-menu"> <i class="fas fa-bars"></i> </button>
+    </div>
+
+    <header>
+        <div class="logo"> 
+            <img src="./css/assets/images/logo.png" alt="">
+            <h2>Pro Arch</h2>
+        </div>
+        <ul>
+            <li><a id="scroll-home" href="">მთავარი</a></li>
+            <li><a id="scroll-about" href="">ჩვენს შესახებ</a></li>
+            <li class="dropdown"><a id="scroll-services" href="">სერვისები <i class="fas fa-sort-down"></i></a>
+            <ul class="submenu">
+                <li><a href="">ყიდვა</a></li>
+                <li><a href="">გაყიდვა</a></li>
+                <li class="dropdown2"><a href="">დაპროექტება <i style="position: absolute; z-index: 9; top: 15px; transform: rotate(-90deg);" class="fas fa-sort-down"></i></a>
+                <ul class="submenu2">
+                    <li><a href="">სახლი</a></li>
+                    <li><a href="">აგარაკი</a></li>
+                    <li><a href="">ოფისი</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a id="scroll-gallery" href="">გალერეა</a></li>
+            <li><a id="scroll-contact" href="">კონტაქტი</a></li>
+        </ul>
+        <div class="header-buttons">
+            <button id="login">ავტორიზაცია</button>
+            <button id="register">რეგისტრაცია</button>
+        </div>
+    </header>
+
+    <div class="register-modal">
+        <div class="register-popup">
+            <button id="register-close"><i class="fas fa-times"></i> </button>
+            <h1>გაიარეთ რეგისტრაცია</h1>
+            <h2>შექმენით თქვენი ანგარიში <i class="fas fa-user"></i> </h2>
+            <form autocomplete="off" id="register-form">
+                <input type="email" name="email" id="register-email" placeholder="ელ-ფოსტა">
+                <input type="password" name="password" id="register-password" placeholder="პაროლი">
+                <div class="password-strength">
+                    <div class="weak"><p>სუსტი</p></div>
+                    <div class="medium"><p>საშუალო</p></div>
+                    <div class="strong"><p>ძლიერი</p></div>
+                </div>
+                <input type="password" name="repeat-password" id="register-repeatPassword" placeholder="გაიმეორეთ პაროლი">
+                <label id="rpt-password-error" for="repeat-password">*პაროლი არ ემთხვევა</label>
+                <input type="text" name="name" id="register-name" placeholder="სახელი">
+                <div> 
+                    <input type="text" name="country" id="register-country" placeholder="ქვეყანა">
+                    <input type="text" name="city" id="register-city" placeholder="ქალაქი">
+                </div>
+                <input type="tel" name="tel" id="register-tel" placeholder="მობილურის ნომერი">
+                <button id="register-send">დადასტურება</button>
+            </form>
+        </div>
+        <div class="register-msgError">
+            <p>გთხოვთ სწორად შეავსოთ ყველა ველი!</p>
+        </div>
+        <div class="register-msgSucces">
+            <p>თქვენ წარმატებით დარეგისტრირდით</p>
+        </div>
+    </div>
+
+    <div class="login-modal">
+        <div class="login-popup">
+            <button id="login-close"><i class="fas fa-times"></i></button>
+            <i class="fas fa-user"></i>
+            <h1>ავტორიზაცია</h1>
+            <form id="login-form">
+                <input type="email"  id="login-email" placeholder="ელ-ფოსტა">
+                <input type="password" id="login-password" placeholder="პაროლი">
+                <button id="login-send">შესვლა</button>
+            </form>
+        </div>
+        <div class="login-messageError">
+            <p>გთხოვთ სწორად შეავსოთ ყველა ველი!</p>
+        </div>
+        <div class="login-messageSucces">
+            <p>თქვენ წარმატებით გაიარეთ ავტორიზაცია!</p>
+        </div>
+    </div>
+
+    <section class="intro">
+        <div class="intro-container">
+            <div id="clock" class="clock"></div>
+            <h1>pro architecture</h1>
+        </div>
+        <button id="intro-scroll"> <i class="fas fa-chevron-down"></i> </button>
+    </section>
+
+    <section class="about">
+        <img class="about-wave" src="css/assets/images/svg.png" alt="">
+        <h1>ჩვენს შესახებ</h1>
+        <div class="about-inner">
+            <div class="about-text-container">
+                <h2>რა არის Pro Architect?</h2>
+                <p>ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს სადღა საწყობთან,</p>
+                <p>სტუმრობდა, გაგათბობდე, ვესტმისტერში სტუმრობაზედ განირჩევა გამომვლელთან დაეკეტათ ბაბუამ. ადელ იხმარდა მთლიანობა თავგამოდებული ვაშაა ეგოს ბაბუამ მაწვალოს გრძნობა ქვეყანაც წაძღოლილ</p>
+                <p>მანიფესტი. კაცურ მანიფესტი ივიწყებდა ბუნკერს, გაჭირებაა, დავითისა მიკროფონის გამოგიგზავნაო კაცუნას მოჰხნავდა გაგეცინებათ გაინაპირე ჩადგები სტუმრობაზედ. გადაუგდო უნგრეთის გრძნობა მოშხამული სტუმრობაზედ დასწითლებოდა გალიიდან. ბრეხტს მოხელეების მშვიდობიანობის</p>
+                <button id="about-more">იხილეთ მეტი</button>
+            </div>
+            <div class="about-image"></div>
+        </div>
+        <div class="about-inner-more">
+            <div class="about-inner-more-text">
+                <h2>რატომ უნდა ავირჩიოთ Pro Architect?</h2>
+                <p>მოხსენებულ ჩაგვიქროლაო კონსტიტუციაში გეცოდება სადილობამდე დანა ამუნათე ოხერია. დაფასებული გაგიწევ სენით შეყრის ირიგაციისა პროცენტით, გეცოდება, კაჟიან ნათავადური ბრიყვმა. მოარგებს გაჯით წავიდეთ, ოცნების პირველ, გეგმასო საპორტო, საგანძურიც იგი გადაუშვებდნენ</p>
+                <p>ცნობისმოყვარეობის, დანახულ კუბისტები ვიღებ. ირიგაციისა შეფისთვის გაკვრვებული შეაჭრა მოსწავლის გეცოდება დადუმებული საწამლავია, სიკვდილისა გამოიცნეს, ვალდებულიც გეგმასო მიწისქვეშა გიორგაძემ ზეიმის. ჯორჯ ვალდებულიც მესროლა ნათავადური მოედები, დიდებულებს</p>
+                <p>აბონემენტების გამოაცხადებს ბუშს, ტირაჟირებას გეცოდება, ვიყიდეთ გაგიწევ. კუბისტები ინსტრუმენტიცაა ბრიყვმა ამუნათე, გეცოდება ვალდებულიც ბუჩქიც მესროლა. ბრიყვმა ახლებურად</p>
+            </div>
+            <div class="about-more-img">
+                <img src="./css/assets/images/building.svg" alt="">
+                <img src="./css/assets/images/urbandesign.svg" alt="">
+            </div>
+            <div class="about-inner-more-text">
+                <h2>როგორ მუშაობს Pro Architecture?</h2>
+                <p>მოხსენებულ ჩაგვიქროლაო კონსტიტუციაში გეცოდება სადილობამდე დანა ამუნათე ოხერია. დაფასებული გაგიწევ სენით შეყრის ირიგაციისა პროცენტით, გეცოდება, კაჟიან ნათავადური ბრიყვმა. მოარგებს გაჯით წავიდეთ, ოცნების პირველ, გეგმასო საპორტო, საგანძურიც იგი გადაუშვებდნენ</p>
+                <p>ცნობისმოყვარეობის, დანახულ კუბისტები ვიღებ. ირიგაციისა შეფისთვის გაკვრვებული შეაჭრა მოსწავლის გეცოდება დადუმებული საწამლავია, სიკვდილისა გამოიცნეს, ვალდებულიც გეგმასო მიწისქვეშა გიორგაძემ ზეიმის. ჯორჯ ვალდებულიც მესროლა ნათავადური მოედები, დიდებულებს</p>
+                <p>აბონემენტების გამოაცხადებს ბუშს, ტირაჟირებას გეცოდება, ვიყიდეთ გაგიწევ. კუბისტები ინსტრუმენტიცაა ბრიყვმა ამუნათე, გეცოდება ვალდებულიც ბუჩქიც მესროლა. ბრიყვმა ახლებურად</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-mark"><h1>სერვისები</h1></div>
+        <div class="services-inner">
+            <div class="services-container">
+                <img src="./css/assets/images/service/under_construction.svg" alt="">
+                <h2>კონსტრუქცია</h2>
+            </div>
+                <div class="services-container">
+                    <img src="./css/assets/images/service/city.svg" alt="">
+                    <h2>გარემო</h2>
+                </div>
+                    <div class="services-container">
+                        <img src="./css/assets/images/service/Designer.svg" alt="">
+                        <h2>დიზაინი</h2>
+                    </div>
+                        <div class="services-container">
+                            <img src="./css/assets/images/service/finance.svg" alt="">
+                            <h2>ფინანსები</h2>
+                        </div>
+                            <div class="services-container">
+                                <img src="./css/assets/images/service/logistics.svg" alt="">
+                                <h2>ლოჯისტიკა</h2>
+                            </div>
+                                <div class="services-container">
+                                    <img src="./css/assets/images/service/sale.svg" alt="">
+                                    <h2>ეკოლოგია</h2>
+                                </div>
+        </div>
+    </section>
+
+   <section class="gallery">
+        <div class="gallery-inner">
+            <h2>გალერეა</h2>
+            <div class="slider">
+                <div class="slide current">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h1>Pro Architecture გთავაზობთ</h1>
+                    <p>
+                        ლორემ იპსუმ ოდისეის მოუკვდე მოხელეების მონიტორებში გალიიდან ხალხიც მოშხამული ადელ. მოუკვდე იხმარდა გაგიფუწდა გრძნობა მოჰხნავდა მოვიცალე ჩვეულებისამებრ გაგცემს ბუნკერს გადაუგდო აკვანში მასპინძლობდა, ოდისეის ხალხიც მეტებდი. შეისმინეს
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-buttons">
+                <button id="prev"><i class="fas fa-arrow-left"></i></button>
+                <button id="next"><i class="fas fa-arrow-right"></i></button>
+              </div>
+        </div>
+   </section>
+   
+   <section class="contact">
+       <div class="contact-container">
+           <h1>დაგვირეკეთ</h1>
+           <i class="fas fa-mobile-alt"></i>
+           <h2>+995 555 12-23-44</h2>
+       </div>
+       <div class="contact-container">
+           <h1>მოგვწერეთ</h1>
+           <i class="far fa-envelope"></i>
+           <h2>proarchitect@gmail.com</h2>
+       </div>
+       <div class="contact-container">
+           <h1>მოგვაკითხეთ</h1>
+           <i class="fas fa-map-marker-alt"></i>
+           <h2>ქ.თბილისი <br> ბუდაპეშტის ქუჩა N12</h2>
+       </div>
+   </section>
+
+   <footer>
+       <div class="footer-menu">
+           <ul>
+            <li><a href="">მთავარი</a></li>
+            <li><a href="">ჩვენს შესახებ</a></li>
+            <li><a href="">სერვისები </a></li>
+            <li><a href="">გალერეა</a></li>
+            <li><a href="">კონტაქტი</a></li
+           </ul>
+       </div>
+       <div class="footer-contact">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-viber"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+       </div>
+       <p style="user-select: none; pointer-events: none;">©2021 All rights reserved. Templated By S.K</p>
+       
+       <button id="footer-scroll">
+        <i class="fas fa-chevron-up"></i>
+       </button>
+   </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./script/animation.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
